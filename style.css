@@ -1,0 +1,65 @@
+/* Basic styling will go here */
+body {
+    font-family: sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: #f4f4f9;
+}
+
+h1 {
+    color: #333;
+}
+
+#video-container {
+    margin-bottom: 20px;
+    border: 2px solid #ddd;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+#transcript-container {
+    margin-bottom: 20px;
+    padding: 15px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    width: 600px;
+    text-align: center;
+}
+
+#transcript-text {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #0056b3;
+}
+
+#translation-text {
+    font-size: 1em;
+    color: #555;
+    font-style: italic;
+}
+
+#controls-container button {
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    margin: 5px;
+    background-color: #007BFF;
+    color: white;
+    transition: background-color 0.3s;
+}
+
+#controls-container button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+#controls-container button:hover:not(:disabled) {
+    background-color: #0056b3;
+}
+
+#score-container {
+    margin-top: 20px;
+}
