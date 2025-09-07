@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ฝึกออกเสียงภาษาอังกฤษจากหนัง</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>ฝึกออกเสียงภาษาอังกฤษจากคลิปตัวอย่างหนัง</h1>
+
+    <div id="video-container">
+        <video id="video-player" width="600" controls src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+
+    <div id="transcript-container">
+        <p id="transcript-text">Transcript will appear here...</p>
+        <p id="translation-text">คำแปลจะแสดงที่นี่...</p>
+    </div>
+
+    <div id="controls-container">
+        <button id="start-btn">เริ่มฝึก (Start Practice)</button>
+        <button id="record-btn" disabled>พูดเลย (Speak Now)</button>
+    </div>
+
+    <div id="score-container">
+        <h2>คะแนนความเหมือน: <span id="score">0</span>%</h2>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
